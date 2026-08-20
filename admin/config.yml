@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: kevinvence2701-jpg/Musik-Magazine-Media
+  name: git-gateway
   branch: main
-  base_url: https://decap-cms-oauth-provider.vercel.app
-  auth_endpoint: /auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
