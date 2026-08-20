@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  - name: "news"
+    label: "Berita / Rilisan Baru"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Judul Berita", name: "title", widget: "string" }
+      - { label: "Kategori", name: "category", widget: "select", options: ["Review", "Release", "News"] }
+      - { label: "Artwork Cover", name: "image", widget: "image" }
+      - { label: "File Audio (Opsional)", name: "audio", widget: "file", required: false }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
