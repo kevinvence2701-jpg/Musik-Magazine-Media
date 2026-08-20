@@ -1,8 +1,11 @@
 backend:
-  name: git-gateway
-  branch: main # Atau master, sesuaikan dengan nama branch GitHub lo
+  name: github
+  repo: kevinvence2701-jpg/MusikMagazine
+  branch: main
+  base_url: https://decap-cms-oauth-provider.vercel.app
+  auth_endpoint: /auth
 
-media_folder: "images/uploads" # Tempat foto berita disimpan
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
