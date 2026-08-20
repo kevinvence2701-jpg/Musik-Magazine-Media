@@ -1,19 +1,18 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # Atau master, sesuaikan dengan nama branch GitHub lo
 
-media_folder: "assets/images"
-public_folder: "assets/images"
+media_folder: "images/uploads" # Tempat foto berita disimpan
+public_folder: "/images/uploads"
 
 collections:
-  - name: "news"
-    label: "Berita / Rilisan Baru"
-    folder: "posts"
+  - name: "berita"
+    label: "Berita & Rilisan"
+    folder: "content/berita"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Judul Berita", name: "title", widget: "string" }
-      - { label: "Kategori", name: "category", widget: "select", options: ["Review", "Release", "News"] }
-      - { label: "Artwork Cover", name: "image", widget: "image" }
-      - { label: "File Audio (Opsional)", name: "audio", widget: "file", required: false }
+      - { label: "Tanggal Publish", name: "date", widget: "datetime" }
+      - { label: "Foto Utama", name: "thumbnail", widget: "image" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
