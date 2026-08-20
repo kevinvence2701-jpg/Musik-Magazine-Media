@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik Magazine - Media Musik Lokal</title>
+
+<!-- KODE FAVICON (LOGO BROWSER) -->
+
+    <link rel="icon" type="image/png" href="Logo Musik.jpg">
+</head>
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<body class="bg-light text-dark">
+
+    <!-- 1. NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="Logo Musik.jpg" alt="Musik Magazine Logo" height="60" class="d-inline-block align-text-top">
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-lg-3 py-2 py-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="#">Submit Music</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION MODERN SPLIT SCREEN -->
+<section class="bg-dark text-white py-5">
+    <div class="container my-md-4">
+        <div class="row align-items-center g-5">
+            
+            <!-- Kolom Kiri: Teks & Call to Action -->
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 fw-bold tracking-tight mb-3">
+                    Musik <br>
+                    <span class="text-white-50">Magazine</span>
+                
+                </h1>
+                <p class="lead text-main mb-4 col-lg-10 fs-6">
+                    "Kami Percaya setiap karya punya cerita, dan setiap suara layak untuk di dengar. Sejarah musik selalu lahir dari suara-suara yang mula di anggap terlalu sunyi untuk di dengar"
+                </p>
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#" class="btn btn-outline-light btn-lg px-4 rounded-pill fw-semibold">Explore News</a>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Foto Artis / Hero Image -->
+            <div class="col-lg-6 text-center">
+                <div class="position-relative d-inline-block">
+                    <!-- Foto Utama -->
+                    <img src="Logo Musik.jpg" 
+                         class="img-fluid rounded-4 shadow-lg object-fit-cover" 
+                         style="max-height: 500px; width: 100%;" 
+                         alt="Artist Performing">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- HERO SLIDER SECTION -->
+<section class="container my-4">
+    <div class="container">
+        
+        <!-- 1. TEXT PENJELASAN (SECTION HEADER) -->
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">
+                Sorotan Berita & Musik Minggu Ini
+            </h2>
+            <p class="text-secondary mx-auto col-md-8 col-lg-6 fs-6">
+                Nikmati ulasan mendalam, kabar rilisan album terbaru, dan pergerakan skena musik lokal tanah air langsung dari redaksi Musik Magazine.
+            </p>
+        </div>
+    <div id="heroCarousel" class="carousel slide carousel-fade shadow rounded overflow-hidden" data-bs-ride="carousel">
+        
+        <!-- Indikator Slide (Titik/Garis Bawah) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Isi Slide -->
+        <div class="carousel-inner">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-bs-interval="5000">
+                <a href="#">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1280&q=80" class="d-block w-100 object-fit-cover" style="max-height: 480px;" alt="Slide 1">
+                        <!-- Dark Overlay agar teks terbaca jelas -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                        <!-- Teks di atas gambar -->
+                        <div class="carousel-caption text-start p-4 p-md-5">
+                            <span class="badge bg-danger mb-2">Featured Story</span>
+                            <h2 class="fw-bold text-white display-6">Sorotan Perkembangan Skena Musik Lokal 2026</h2>
+                            <p class="d-none d-md-block text-light small">Ulasan mendalam mengenai pergerakan rilisan fisik, band independen baru, dan festival musik tanah air.</p>
+                            <span class="btn btn-sm btn-outline-light mt-2">Baca Selengkapnya</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <a href="#">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1280&q=80" class="d-block w-100 object-fit-cover" style="max-height: 480px;" alt="Slide 2">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                        <div class="carousel-caption text-start p-4 p-md-5">
+                            <span class="badge bg-primary mb-2">Album Review</span>
+                            <h2 class="fw-bold text-white display-6">Eksplorasi Sound Baru Band Indie Lokal</h2>
+                            <p class="d-none d-md-block text-light small">Ulasan komprehensif mengenai rilisan album terbaru pekan ini.</p>
+                            <span class="btn btn-sm btn-outline-light mt-2">Baca Selengkapnya</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <a href="#">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1280&q=80" class="d-block w-100 object-fit-cover" style="max-height: 480px;" alt="Slide 3">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                        <div class="carousel-caption text-start p-4 p-md-5">
+                            <span class="badge bg-success mb-2">Exclusive Interview</span>
+                            <h2 class="fw-bold text-white display-6">Di Balik Layar Tur Konser Musik Independen</h2>
+                            <p class="d-none d-md-block text-light small">Wawancara khusus bersama para kolektif penyelenggara gigs lokal.</p>
+                            <span class="btn btn-sm btn-outline-light mt-2">Baca Selengkapnya</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Tombol Panah Navigasi Kiri & Kanan -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</section>
+
+
+
+    <!-- 3. ARTICLE CARDS GRID -->
+
+    <section class="container my-5">
+        <h4 class="border-bottom pb-2 mb-4 fw-bold">RILISAN TERBARU</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="Jiwa Merah Putih OK.png" class="card-img-top" alt="Cover">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Review</span>
+                        <h5 class="card-title fw-semibold">MELANIE SUBONO</h5>
+                        <p class="card-text text-muted small">Single terbaru Melanie Subono menjadi refleksi dan ajakan menghidupkan kembali semangat persatuan menjelang Hari Kemerdekaan Indonesia.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="#" class="btn btn-sm btn-outline-dark w-100">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Cover">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">Interview</span>
+                        <h5 class="card-title fw-semibold">Wawancara Eksklusif Band</h5>
+                        <p class="card-text text-muted small">Bincang-bincang mengenai proses kreatif di balik album terbaru mereka...</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="#" class="btn btn-sm btn-outline-dark w-100">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Cover">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">News</span>
+                        <h5 class="card-title fw-semibold">Kabar Gigs Pekan Ini</h5>
+                        <p class="card-text text-muted small">Daftar panggung musik independen yang wajib lo datangi akhir pekan ini...</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a href="#" class="btn btn-sm btn-outline-dark w-100">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. SUPPORT US SECTION -->
+
+    <section class="w-100 text-center my-5 py-4 bg-white border-top border-bottom">
+        <div class="container">
+            <h5 class="fw-bold mb-2">Musk Magazine (Musik Lokal)</h5>
+            <p class="text-muted small mb-3">Kirimkan rilis pers, lagu baru, atau dukung operasional kami.</p>
+            <a href="#" class="btn btn-dark btn-sm px-4">Support Us / Submit Music</a>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="w-100 text-center py-4 bg-light">
+        <div class="d-flex justify-content-center align-items-center gap-4 mb-3">
+            <a href="#" class="text-dark"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            <a href="#" class="text-dark"><i class="fa-brands fa-spotify fa-lg"></i></a>
+        </div>
+        <p class="text-muted small m-0">&copy; 2026 Musik Magazine. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
