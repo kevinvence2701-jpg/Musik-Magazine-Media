@@ -15,4 +15,16 @@ collections:
       - { label: "Judul Berita", name: "title", widget: "string" }
       - { label: "Tanggal Publish", name: "date", widget: "datetime" }
       - { label: "Foto Utama", name: "thumbnail", widget: "image" }
+      - {
+          label: "Link Streaming / Lagu (Spotify/YouTube)",
+          name: "song_link",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Upload File Audio (MP3/WAV)",
+          name: "audio_file",
+          widget: "file",
+          required: false,
+        }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
